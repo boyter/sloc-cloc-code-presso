@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Sloc Cloc and Code</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -26,28 +26,169 @@
 			<div class="slides">
 				<section>
 					<h1>Sloc Cloc and Code</h1>
-					<h3>Counting your codez as fast as possible</h3>
+					<h3>Counting code fast as possible</h3>
+					<h3>so you know when NOT to do things</h3>
 				</section>
 
 				<section>
 					<h2>WHY?! WTF MATE?</h2>
-					<p>BNG Conserve</p>
-					<p>Code counters, cloc, tokei, gocloc, loc, polyglot</p>
-					<p>Cyclomatic complexity</p>
+					<p>Totally due to interaction with Kablamo</p>
+					<ul>
+						<li>Kablamo product ideas meeting (Marley)</li>
+						<li>BNG Conserve</li>
+					</ul>
+					<p>Code counters, cloc, tokei, gocloc, loc, polyglot, sloccloc</p>
+					<p>Cyclomatic/COCOMO complexity</p>
 					<p><a href="https://boyter.org/posts/sloc-cloc-code/">Took</a> this <a href="https://boyter.org/posts/sloc-cloc-code-revisited/">way</a> too <a href="https://boyter.org/posts/sloc-cloc-code-performance/">far</a> 22,000 <a href="https://boyter.org/posts/why-count-lines-of-code/">words</a> (so far)</p>
 				</section>
 
 				<section>
-					
+					<h2>Uses? Helps with,</h2>
+					<ul>
+						<li>Budgeting</li>
+						<li>Testing</li>
+						<li>Scheduling</li>
+						<li><u>Estimation</u></li>
+					</ul>
+				</section>
+
+				<section>
+					<pre><code style="font-size: 16px;">
+$ scc conserve-version2.0
+───────────────────────────────────────────────────────────────────────────────
+Language                 Files     Lines     Code  Comments   Blanks Complexity
+───────────────────────────────────────────────────────────────────────────────
+JavaScript               18212   3472670  2508207    637129   327334     366005
+JSON                      2910    386034   385592         0      442          0
+Markdown                  2907    371392   263677         0   107715          0
+License                   1699     38281    31199         0     7082          0
+HTML                      1194    162340   141367      3857    17116          0
+TypeScript Typings        1094    150114    91290     45685    13139       1616
+SVG                       1025     14303    14276        26        1          0
+C#                         833     65578    47289     10547     7742       3439
+CSS                        666     40964    33208      1003     6753          0
+YAML                       475     16573    16325         0      248          0
+XML                        408   2704718  2686021      1594    17103          0
+LEX                        272       359      339        10       10          0
+Prolog                     250      2094     2086         0        8          0
+Plain Text                 199     16828    15480         0     1348          0
+Batch                      167      1163     1161         0        2          0
+Sass                       116     13619    12299       287     1033          1
+Makefile                    88      1636     1150        59      427          2
+TypeScript                  85     15523    13520       193     1810       2259
+C Header                    78     10884     7914      1260     1710        514
+LESS                        72      6433     6009       170      254          0
+C++                         64     26719    20875      2719     3125       4965
+Python                      53     30703    24352      3251     3100       4786
+C++ Header                  50      8615     6780       883      952        515
+Shell                       44      1188      800       198      190        125
+Powershell                  37      5381     2400      2450      531        310
+CoffeeScript                37      2196     1420       429      347        175
+Handlebars                  33       787      698         0       89         15
+Report Definition L…        30     47197    47091         0      106          0
+Puppet                      26      2032     1875         0      157        176
+Objective C                 22      4725     3005       961      759        574
+Patch                       19     15623    14383         0     1240          0
+MSBuild                     17      4949     4655       204       90         16
+gitignore                   14       172      140        13       19          0
+C                            8       326      222        54       50         20
+Smarty Template              6       138      121         0       17         14
+ASP.NET                      5        31       26         0        5          0
+Emacs Lisp                   5       356      276        38       42          5
+SQL                          5      2788     2652        34      102          1
+Module-Definition            5       525      437         0       88         96
+Razor                        4        27       19         6        2          0
+PHP                          4       298      120       152       26         36
+Autoconf                     4       417      241       137       39         40
+XCode Config                 3        83        7        67        9          0
+Mustache                     2         0        0         0        0          0
+CSV                          2       785      785         0        0          0
+Jade                         2        32       16         6       10          0
+Go Template                  2         9        9         0        0          0
+Fish                         1        10        1         7        2          0
+Rakefile                     1       251      198        15       38          4
+Zsh                          1        25        6        15        4          0
+Dockerfile                   1         7        7         0        0          0
+Ruby                         1         6        4         2        0          0
+m4                           1       167      114        36       17          0
+FORTRAN Legacy               1         0        0         0        0          0
+Document Type Defin…         1       870      691         0      179          0
+BASH                         1        27        6        17        4          0
+Specman e                    1         0        0         0        0          0
+D                            1         0        0         0        0          0
+XML Schema                   1      1013     1013         0        0          0
+───────────────────────────────────────────────────────────────────────────────
+Total                    33265   7649984  6413854    713514   522616     385709
+───────────────────────────────────────────────────────────────────────────────
+Estimated Cost to Develop $268,577,946
+Estimated Schedule Effort 128.510173 months
+Estimated People Required 247.564001
+───────────────────────────────────────────────────────────────────────────────
+
+
+					</code></pre>
+				</section>
+
+				<section>
+					<p>scc itself has a complexity of ~645</p>
+					<p>ABC Archive API has a complexity of ~1535</p>
+					<p>ripgrep has complexity of ~1603</p>
+					<p>searchcode has complexity ~1615</p>
+					<p>django and redis has complexity ~26000</p>
+					<pre><code style="font-size: 16px;">
+$ scc --by-file -i cs -s complexity conserve-version2.0
+───────────────────────────────────────────────────────────────────────────────
+Language                 Files     Lines     Code  Comments   Blanks Complexity
+───────────────────────────────────────────────────────────────────────────────
+C#                         722     56696    40351      9522     6823       3259
+───────────────────────────────────────────────────────────────────────────────
+~api/Models/RiskMan.Context.cs     12182     9339         7     2836       1017
+~pi/RiskManDataSet.Designer.cs      8617     7732        92      793        821
+~ories/ContractorRepository.cs      2946     2394       287      265        314
+~ies/RegistrationRepository.cs      1116      860       129      127        168
+~ositories/ClientRepository.cs      1175      963        81      131        115
+~itories/EmployeeRepository.cs      1178      912       157      109         97
+~ActivityScheduleRepository.cs       981      713       180       88         65
+~epositories/AuthRepository.cs       416      342        12       62         62
+~nserve.api/Utils/AuthUtils.cs       401      232       123       46         47
+~mployeeInductionRepository.cs       579      379       155       45         42
+~i/Utils/SiteInductionUtils.cs       271      203        38       30         41
+~erve.api/Utils/CommonUtils.cs       407      247       127       33         40
+~/Utils/ContractorValidator.cs       414      321        65       28         38
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>What about JavaScript?</h2>
+					<pre><code style="font-size: 16px;">
+JavaScript                2075    788765   535401    175383    77981      85365
+					</code></pre>
+
+					old vs new
+
+					<pre><code style="font-size: 16px;">
+JavaScript                 344     31574    26817       971     3786        927
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>How Fast?</h2>
+					<img src="./img/2.png" style="border: none;" />
 				</section>
 
 				<section>
 					<h2>How to Go Fast</h2>
 					<ul>
 						<li>Do as little as possible</li>
-						<li>On as many cores/cpu's as possible</li>
+						<li>On as many cores/CPU's as possible</li>
 						<li>Making it easy to do the next thing</li>
 					</ul>
+				</section>
+
+				<section>
+					<h2>Author of CLOC</h2>
+					<p>Internet FAME POINTS!</p>
+					<img src="./img/1.png" style="border: none; height:420px" />
 				</section>
 
 			</div>
